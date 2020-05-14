@@ -33,6 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="LoveSharp, Version=11.0.49.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Love2dCS.11.0.49\lib\netstandard1.2\LoveSharp.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -43,11 +46,32 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="classes\Game\AI.cs" />
+    <Compile Include="classes\Interface\Button.cs" />
+    <Compile Include="classes\Game\Cell.cs" />
+    <Compile Include="classes\Game\Field.cs" />
+    <Compile Include="classes\Game\GameScene.cs" />
+    <Compile Include="classes\Interface\Buttons\ButtonStart.cs" />
+    <Compile Include="classes\Interface\Buttons\RadioButtonAnimation.cs" />
+    <Compile Include="classes\Interface\Buttons\RadioButtonDifficulty.cs" />
+    <Compile Include="classes\Interface\Buttons\RadioButtonMode.cs" />
+    <Compile Include="classes\Interface\InterfaceElement.cs" />
+    <Compile Include="classes\Interface\Labels\AnimationText.cs" />
+    <Compile Include="classes\Interface\Labels\DifficultyText.cs" />
+    <Compile Include="classes\Interface\Labels\ModeText.cs" />
+    <Compile Include="classes\Interface\Labels\StatusText.cs" />
+    <Compile Include="classes\Interface\RadioButton.cs" />
+    <Compile Include="classes\Style.cs" />
+    <Compile Include="classes\Interface\Text.cs" />
+    <Compile Include="classes\misc\Misc.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="classes\Star.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
